@@ -1,0 +1,24 @@
+const Discord = require('discord.js');
+const package = require("../package.json");
+const config = require("../config.json")
+
+exports.run = (inv, message, args) => {
+
+let embed = new Discord.RichEmbed()
+            .setAuthor("Alphi#9839", "https://cdn.discordapp.com/attachments/412027360544817153/450881050386759717/smokeblue.jpg")
+            .setColor('#34495E')
+            .setFooter('Actual Server: ' + `${message.guild.name}`, message.guild.iconURL)
+            .addField("My Phrase", "Technology is Power.", true)
+            .setImage("https://media.giphy.com/media/OAQGvZClyvjSo/giphy.gif")
+            .setTimestamp()
+        message.author.send({ embed })
+        let cembed = new Discord.RichEmbed()
+            .setAuthor("Vell Bot", "https://media.giphy.com/media/OAQGvZClyvjSo/giphy.gif")
+            .setColor("#0x550055")
+            .setFooter('Server: ' + `${message.guild.name}`, message.guild.iconURL)
+            .addField("Info sent to DMs", "*Vell Bot*")
+            .setImage("https://media.giphy.com/media/OAQGvZClyvjSo/giphy.gif")
+        message.channel.send({ embed: cembed })
+        
+        
+        }

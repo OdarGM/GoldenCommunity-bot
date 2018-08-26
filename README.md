@@ -1,5 +1,2 @@
-# GoldenCommunity-bot
-Bot for Golden Community discord server 
+# Pro version of the Discord bot Vell, made by Alphi#9839
 
-
-bot code from https://github.com/jdcoding01
