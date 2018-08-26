@@ -174,4 +174,4 @@ inv.on("message", message => {
 
 
 
-inv.login(config.token);
+inv.login(process.env.token);
